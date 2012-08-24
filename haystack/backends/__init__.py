@@ -740,6 +740,8 @@ class BaseSearchQuery(object):
         self._hit_count = None
         self._facet_counts = None
         self._spelling_suggestion = None
+        self.start_offset = 0
+        self.end_offset = None
 
     def _clone(self, klass=None):
         if klass is None:
